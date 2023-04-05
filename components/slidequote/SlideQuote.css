@@ -1,0 +1,4 @@
+.overlay::after,
+.overlay::before {
+    background: linear-gradient(to right, rgba(15, 5, 29, 1), rgba(15, 5, 29, 0)) !important;
+}

@@ -1,0 +1,23 @@
+.blur{
+    mix-blend-mode: soft-light;
+}
+
+.blur .image {
+    position: fixed;
+    -webkit-filter: blur(80px);
+    filter: blur(80px);
+    width: 500px;
+    height: 500px;
+    user-select: none;
+}
+
+.blur .image:first-child {
+    left: -4%;
+    top: -4%;
+}
+
+
+.blur .image:last-child {
+    right: -4%;
+    bottom: -4%;
+}
