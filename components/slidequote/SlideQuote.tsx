@@ -24,8 +24,9 @@ const SlideQuote = () => {
     }, []);
 
     return (
-        <div className='absolute top-8 left-0 w-full h-fit'>
-            <Marquee loop={0} direction='right' pauseOnHover={true} speed={5}>
+        <div className='absolute top-8 left-0 
+            w-full h-fit'>
+            <Marquee loop={0} direction='right' pauseOnHover={true} speed={2}>
                 {
                     sliders.map((item: any) => (
                         <div key={item.id} className='px-5'>

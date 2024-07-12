@@ -25,7 +25,7 @@ const Slideleft = () => {
 
   return (
     <div className='absolute bottom-8 right-0 w-full h-fit'>
-        <Marquee loop={0} direction='left' pauseOnHover={true} speed={5}>
+        <Marquee loop={0} direction='left' pauseOnHover={true} speed={2}>
             {
                 sliders.map((item: any) => (
                     <div key={item.id} className='px-5'>

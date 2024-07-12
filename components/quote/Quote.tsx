@@ -34,7 +34,7 @@ const Quote = () => {
                         <div>
                             <div key={quotes.id} 
                                     className="getQuote">
-                                <h2>{quotes.quote}</h2>
+                                <h2 className='phones:text-lg'>{quotes.quote}</h2>
                                 <p>{quotes.author}</p>
                             </div>
 
