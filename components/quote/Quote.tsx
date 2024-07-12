@@ -7,7 +7,7 @@ const fetcher = (url : string) => fetch(url).then(res => res.json())
 
 const Quote = () => {
     const {data: quotes, isLoading: quoteLoading, error: quoteError, mutate: quoteGenerate} = useSWR(
-        'https://api.quotable.io/random',
+        'https://dummyjson.com/quotes/random',
         fetcher
     )
 
@@ -32,8 +32,9 @@ const Quote = () => {
                 <div className="grid grid-cols-4 gap-4">
                     <div className='flex items-center col-span-3'>
                         <div>
-                            <div key={quotes._id} className="getQuote">
-                                <h2>{quotes.content}</h2>
+                            <div key={quotes.id} 
+                                    className="getQuote">
+                                <h2>{quotes.quote}</h2>
                                 <p>{quotes.author}</p>
                             </div>
 
